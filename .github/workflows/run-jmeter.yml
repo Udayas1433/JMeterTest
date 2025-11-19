@@ -1,0 +1,47 @@
+name: Run JMeter Test
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  jmeter-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '11'
+
+      - name: Make JMeter executable
+        run: |
+          echo "Making JMeter executable"
+          chmod +x apache-jmeter-5.4.3/bin/jmeter
+          export PATH="$PWD/apache-jmeter-5.4.3/bin:$PATH"
+
+      - name: Run JMeter Test (Demo.jmx)
+        run: |
+          JMETER_BIN="$PWD/apache-jmeter-5.4.3/bin/jmeter"
+          TEST_PLAN="$PWD/Demo.jmx"
+
+          mkdir -p jmeter-output
+          echo "Running JMeter..."
+          $JMETER_BIN -n -t "$TEST_PLAN" -l jmeter-output/results.jtl -e -o jmeter-output/report || true
+
+      - name: Upload HTML Report
+        uses: actions/upload-artifact@v4
+        with:
+          name: jmeter-html-report
+          path: jmeter-output/report
+
+      - name: Upload JTL Results
+        uses: actions/upload-artifact@v4
+        with:
+          name: jmeter-results-jtl
+          path: jmeter-output/results.jtl
