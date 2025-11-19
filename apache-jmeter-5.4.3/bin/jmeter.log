@@ -1,0 +1,227 @@
+2025-11-19 17:36:33,192 INFO o.a.j.u.JMeterUtils: Setting Locale to en_US
+2025-11-19 17:36:33,301 INFO o.a.j.JMeter: Loading user properties from: user.properties
+2025-11-19 17:36:33,317 INFO o.a.j.JMeter: Loading system properties from: system.properties
+2025-11-19 17:36:33,348 INFO o.a.j.JMeter: Copyright (c) 1998-2021 The Apache Software Foundation
+2025-11-19 17:36:33,348 INFO o.a.j.JMeter: Version 5.4.3
+2025-11-19 17:36:33,348 INFO o.a.j.JMeter: java.version=11.0.27
+2025-11-19 17:36:33,348 INFO o.a.j.JMeter: java.vm.name=Java HotSpot(TM) 64-Bit Server VM
+2025-11-19 17:36:33,348 INFO o.a.j.JMeter: os.name=Windows 10
+2025-11-19 17:36:33,348 INFO o.a.j.JMeter: os.arch=amd64
+2025-11-19 17:36:33,348 INFO o.a.j.JMeter: os.version=10.0
+2025-11-19 17:36:33,348 INFO o.a.j.JMeter: file.encoding=Cp1252
+2025-11-19 17:36:33,348 INFO o.a.j.JMeter: java.awt.headless=null
+2025-11-19 17:36:33,348 INFO o.a.j.JMeter: Max memory     =931135488
+2025-11-19 17:36:33,348 INFO o.a.j.JMeter: Available Processors =4
+2025-11-19 17:36:33,395 INFO o.a.j.JMeter: Default Locale=English (United States)
+2025-11-19 17:36:33,395 INFO o.a.j.JMeter: JMeter  Locale=English (United States)
+2025-11-19 17:36:33,395 INFO o.a.j.JMeter: JMeterHome=D:\Sotfwares\apache-jmeter-5.4.3\apache-jmeter-5.4.3
+2025-11-19 17:36:33,395 INFO o.a.j.JMeter: user.dir  =D:\Sotfwares\apache-jmeter-5.4.3\apache-jmeter-5.4.3\bin
+2025-11-19 17:36:33,395 INFO o.a.j.JMeter: PWD       =D:\Sotfwares\apache-jmeter-5.4.3\apache-jmeter-5.4.3\bin
+2025-11-19 17:36:33,395 INFO o.a.j.JMeter: IP: 127.0.0.1 Name: DESKTOP-H93MA13 FullName: kubernetes.docker.internal
+2025-11-19 17:36:34,082 INFO o.a.j.JMeter: Setting LAF to: laf:com.sun.java.swing.plaf.windows.WindowsClassicLookAndFeel
+2025-11-19 17:36:34,973 INFO o.a.j.JMeter: Loaded icon properties from org/apache/jmeter/images/icon.properties
+2025-11-19 17:36:47,317 INFO o.j.r.JARSourceHTTP: Requesting https://jmeter-plugins.org/repo/?installID=windows_10-1143efa656cb2f563d6e5e0b56b0adc5-gui
+2025-11-19 17:36:51,567 WARN o.j.r.PluginManagerMenuItem: Failed to load plugin updates info
+java.net.UnknownHostException: No such host is known (jmeter-plugins.org)
+	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method) ~[?:?]
+	at java.net.InetAddress$PlatformNameService.lookupAllHostAddr(InetAddress.java:929) ~[?:?]
+	at java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1538) ~[?:?]
+	at java.net.InetAddress$NameServiceAddresses.get(InetAddress.java:848) ~[?:?]
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1527) ~[?:?]
+	at java.net.InetAddress.getAllByName(InetAddress.java:1380) ~[?:?]
+	at java.net.InetAddress.getAllByName(InetAddress.java:1302) ~[?:?]
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45) ~[httpclient-4.5.12.jar:4.5.12]
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.resolveHostname(DefaultClientConnectionOperator.java:263) ~[httpclient-4.5.12.jar:4.5.12]
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:162) ~[httpclient-4.5.12.jar:4.5.12]
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:326) ~[httpclient-4.5.12.jar:4.5.12]
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:605) ~[httpclient-4.5.12.jar:4.5.12]
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:440) ~[httpclient-4.5.12.jar:4.5.12]
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835) ~[httpclient-4.5.12.jar:4.5.12]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83) ~[httpclient-4.5.12.jar:4.5.12]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56) ~[httpclient-4.5.12.jar:4.5.12]
+	at org.jmeterplugins.repository.JARSourceHTTP.execute(JARSourceHTTP.java:499) ~[jmeter-plugins-manager-1.8.jar:?]
+	at org.jmeterplugins.repository.JARSourceHTTP.execute(JARSourceHTTP.java:494) ~[jmeter-plugins-manager-1.8.jar:?]
+	at org.jmeterplugins.repository.JARSourceHTTP.getJSON(JARSourceHTTP.java:152) ~[jmeter-plugins-manager-1.8.jar:?]
+	at org.jmeterplugins.repository.JARSourceHTTP.getRepositories(JARSourceHTTP.java:276) ~[jmeter-plugins-manager-1.8.jar:?]
+	at org.jmeterplugins.repository.JARSourceHTTP.getRepo(JARSourceHTTP.java:304) ~[jmeter-plugins-manager-1.8.jar:?]
+	at org.jmeterplugins.repository.PluginManager.load(PluginManager.java:71) ~[jmeter-plugins-manager-1.8.jar:?]
+	at org.jmeterplugins.repository.PluginManagerMenuItem$1.run(PluginManagerMenuItem.java:38) [jmeter-plugins-manager-1.8.jar:?]
+2025-11-19 17:37:05,667 INFO o.a.j.s.FileServer: Default base='D:\Sotfwares\apache-jmeter-5.4.3\apache-jmeter-5.4.3\bin'
+2025-11-19 17:37:05,683 INFO o.a.j.g.a.Load: Loading file: D:\Sotfwares\apache-jmeter-5.4.3\apache-jmeter-5.4.3\bin\User.jmx
+2025-11-19 17:37:05,683 INFO o.a.j.s.FileServer: Set new base='D:\Sotfwares\apache-jmeter-5.4.3\apache-jmeter-5.4.3\bin'
+2025-11-19 17:37:07,464 INFO o.a.j.s.SaveService: Testplan (JMX) version: 2.2. Testlog (JTL) version: 2.2
+2025-11-19 17:37:07,573 INFO o.a.j.s.SaveService: Using SaveService properties version 5.0
+2025-11-19 17:37:07,589 INFO o.a.j.s.SaveService: Using SaveService properties file encoding UTF-8
+2025-11-19 17:37:07,605 INFO o.a.j.s.SaveService: Loading file: D:\Sotfwares\apache-jmeter-5.4.3\apache-jmeter-5.4.3\bin\User.jmx
+2025-11-19 17:37:08,542 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/html is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2025-11-19 17:37:08,542 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xhtml+xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2025-11-19 17:37:08,542 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2025-11-19 17:37:08,542 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2025-11-19 17:37:08,542 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/vnd.wap.wml is org.apache.jmeter.protocol.http.parser.RegexpHTMLParser
+2025-11-19 17:37:08,542 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/css is org.apache.jmeter.protocol.http.parser.CssParser
+2025-11-19 17:37:10,073 INFO o.a.j.s.SampleResult: Note: Sample TimeStamps are START times
+2025-11-19 17:37:10,073 INFO o.a.j.s.SampleResult: sampleresult.default.encoding is set to ISO-8859-1
+2025-11-19 17:37:10,073 INFO o.a.j.s.SampleResult: sampleresult.useNanoTime=true
+2025-11-19 17:37:10,073 INFO o.a.j.s.SampleResult: sampleresult.nanoThreadSleep=5000
+2025-11-19 17:37:11,276 INFO o.a.j.v.ViewResultsFullVisualizer: Add JavaFX to your Java installation if you want to use renderer: org.apache.jmeter.visualizers.RenderInBrowser
+2025-11-19 17:37:11,683 INFO o.a.j.s.FileServer: Set new base='D:\Sotfwares\apache-jmeter-5.4.3\apache-jmeter-5.4.3\bin'
+2025-11-19 17:38:55,911 INFO o.a.j.g.a.v.TreeClonerForValidation: Running validation with number of threads:1, ignoreTimers:true, number of iterations:1
+2025-11-19 17:38:55,926 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2025-11-19 17:38:55,942 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2025-11-19 17:38:55,942 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2025-11-19 17:38:55,942 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must contain the string: '.functions.'
+2025-11-19 17:38:55,942 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must not contain the string: '.gui.'
+2025-11-19 17:38:57,879 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2025-11-19 17:38:57,926 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : User
+2025-11-19 17:38:57,926 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group User.
+2025-11-19 17:38:57,926 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2025-11-19 17:38:57,942 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=1 ramp-up=10 delayedStart=false
+2025-11-19 17:38:57,958 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2025-11-19 17:38:57,958 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2025-11-19 17:38:57,958 INFO o.a.j.t.JMeterThread: Thread started: User 1-1
+2025-11-19 17:38:58,020 INFO o.a.j.p.h.s.HTTPHCAbstractImpl: Local host = DESKTOP-H93MA13
+2025-11-19 17:38:58,051 INFO o.a.j.p.h.s.HTTPHC4Impl: HTTP request retry count = 0
+2025-11-19 17:38:58,520 INFO o.a.j.t.JMeterThread: Thread is done: User 1-1
+2025-11-19 17:38:58,520 INFO o.a.j.t.JMeterThread: Thread finished: User 1-1
+2025-11-19 17:38:58,536 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2025-11-19 17:38:58,536 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2025-11-19 17:39:23,045 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2025-11-19 17:39:23,045 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2025-11-19 17:39:23,061 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2025-11-19 17:39:23,295 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : User
+2025-11-19 17:39:23,295 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group User.
+2025-11-19 17:39:23,295 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2025-11-19 17:39:23,295 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=1 ramp-up=10 delayedStart=false
+2025-11-19 17:39:23,295 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2025-11-19 17:39:23,295 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2025-11-19 17:39:23,311 INFO o.a.j.t.JMeterThread: Thread started: User 1-1
+2025-11-19 17:39:23,327 INFO o.a.j.t.JMeterThread: Thread is done: User 1-1
+2025-11-19 17:39:23,342 INFO o.a.j.t.JMeterThread: Thread finished: User 1-1
+2025-11-19 17:39:23,342 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2025-11-19 17:39:23,342 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2025-11-19 17:39:31,921 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2025-11-19 17:39:31,936 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2025-11-19 17:39:31,936 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2025-11-19 17:39:32,217 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : User
+2025-11-19 17:39:32,217 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group User.
+2025-11-19 17:39:32,217 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2025-11-19 17:39:32,217 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=1 ramp-up=10 delayedStart=false
+2025-11-19 17:39:32,217 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2025-11-19 17:39:32,233 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2025-11-19 17:39:32,233 INFO o.a.j.t.JMeterThread: Thread started: User 1-1
+2025-11-19 17:39:32,249 INFO o.a.j.t.JMeterThread: Thread is done: User 1-1
+2025-11-19 17:39:32,249 INFO o.a.j.t.JMeterThread: Thread finished: User 1-1
+2025-11-19 17:39:32,249 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2025-11-19 17:39:32,249 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2025-11-19 17:47:09,835 INFO o.a.j.g.a.Load: Loading file: C:\Users\PrakUday\Desktop\JMeterScripts\JPET.jmx
+2025-11-19 17:47:09,835 INFO o.a.j.s.FileServer: Set new base='C:\Users\PrakUday\Desktop\JMeterScripts'
+2025-11-19 17:47:09,835 INFO o.a.j.s.SaveService: Loading file: C:\Users\PrakUday\Desktop\JMeterScripts\JPET.jmx
+2025-11-19 17:47:09,960 INFO o.a.j.p.h.c.CookieManager: Settings: Delete null: true Check: true Allow variable: true Save: false Prefix: COOKIE_
+2025-11-19 17:47:11,647 INFO o.a.j.e.KeyToolUtils: keytool found at 'keytool'
+2025-11-19 17:47:11,663 INFO o.a.j.p.h.p.ProxyControl: HTTP(S) Test Script Recorder SSL Proxy will use keys that support embedded 3rd party resources in file D:\Sotfwares\apache-jmeter-5.4.3\apache-jmeter-5.4.3\bin\proxyserver.jks
+2025-11-19 17:47:12,100 INFO o.a.j.v.ViewResultsFullVisualizer: Add JavaFX to your Java installation if you want to use renderer: org.apache.jmeter.visualizers.RenderInBrowser
+2025-11-19 17:47:13,210 INFO o.a.j.v.ViewResultsFullVisualizer: Add JavaFX to your Java installation if you want to use renderer: org.apache.jmeter.visualizers.RenderInBrowser
+2025-11-19 17:47:13,553 INFO o.a.j.s.FileServer: Set new base='C:\Users\PrakUday\Desktop\JMeterScripts'
+2025-11-19 17:48:07,061 INFO o.a.j.g.a.Load: Loading file: C:\Users\PrakUday\Desktop\JMeterScripts\MasterSlave.jmx
+2025-11-19 17:48:07,061 INFO o.a.j.s.FileServer: Set new base='C:\Users\PrakUday\Desktop\JMeterScripts'
+2025-11-19 17:48:07,061 INFO o.a.j.s.SaveService: Loading file: C:\Users\PrakUday\Desktop\JMeterScripts\MasterSlave.jmx
+2025-11-19 17:48:07,295 INFO o.a.j.v.ViewResultsFullVisualizer: Add JavaFX to your Java installation if you want to use renderer: org.apache.jmeter.visualizers.RenderInBrowser
+2025-11-19 17:48:07,498 INFO o.a.j.s.FileServer: Set new base='C:\Users\PrakUday\Desktop\JMeterScripts'
+2025-11-19 17:51:54,127 INFO o.a.j.g.a.t.TemplateManager: Reading templates from: D:\Sotfwares\apache-jmeter-5.4.3\apache-jmeter-5.4.3\bin\templates\templates.xml
+2025-11-19 17:52:09,576 INFO o.a.j.g.a.Load: Loading file: C:\Users\PrakUday\AppData\Local\Temp\Recording420597222049807281.output
+2025-11-19 17:52:09,576 INFO o.a.j.s.SaveService: Loading file: C:\Users\PrakUday\AppData\Local\Temp\Recording420597222049807281.output
+2025-11-19 17:52:09,795 INFO o.a.j.v.ViewResultsFullVisualizer: Add JavaFX to your Java installation if you want to use renderer: org.apache.jmeter.visualizers.RenderInBrowser
+2025-11-19 17:52:10,217 INFO o.a.j.v.ViewResultsFullVisualizer: Add JavaFX to your Java installation if you want to use renderer: org.apache.jmeter.visualizers.RenderInBrowser
+2025-11-19 17:57:04,049 INFO o.a.j.p.h.p.ProxyControl: Creating HTTP(S) Test Script Recorder Root CA in D:\Sotfwares\apache-jmeter-5.4.3\apache-jmeter-5.4.3\bin\proxyserver.jks, ensure you install certificate in your Browser for recording
+2025-11-19 17:57:38,361 INFO o.a.j.p.h.p.ProxyControl: Created keystore in D:\Sotfwares\apache-jmeter-5.4.3\apache-jmeter-5.4.3\bin\proxyserver.jks
+2025-11-19 17:57:39,533 INFO o.a.j.p.h.p.Daemon: Creating Daemon Socket on port: 8080
+2025-11-19 17:57:39,736 INFO o.a.j.p.h.p.Daemon: Test Script Recorder up and running!
+2025-11-19 17:57:40,220 INFO o.a.j.p.h.p.Proxy: Proxy will remove the headers: If-Modified-Since,If-None-Match,Host
+2025-11-19 17:57:40,439 INFO o.a.j.p.h.p.ProxyControl: [51364]  Creating entry login.live.com in D:\Sotfwares\apache-jmeter-5.4.3\apache-jmeter-5.4.3\bin\proxyserver.jks
+2025-11-19 17:57:58,049 INFO o.a.j.p.h.p.Daemon: HTTP(S) Test Script Recorder stopped
+2025-11-19 17:58:08,837 INFO o.a.j.p.h.p.ProxyControl: [51365]  Creating entry android.clients.google.com in D:\Sotfwares\apache-jmeter-5.4.3\apache-jmeter-5.4.3\bin\proxyserver.jks
+2025-11-19 17:58:09,358 INFO o.a.j.p.h.p.Proxy: [51364]  KeyStore for SSL loaded OK and put host 'login.live.com' in map with key (login.live.com)
+2025-11-19 17:58:11,398 WARN o.a.j.p.h.p.Proxy: [51364]  Problem with SSL certificate for url  for 'login.live.com'? Ensure browser is set to accept the JMeter proxy cert: Remote host terminated the handshake
+2025-11-19 17:58:43,709 INFO o.a.j.p.h.p.Proxy: [51365]  KeyStore for SSL loaded OK and put host 'android.clients.google.com' in map with key (android.clients.google.com)
+2025-11-19 17:58:44,021 WARN o.a.j.p.h.p.Proxy: [51365]  Problem with SSL certificate for url  for 'android.clients.google.com'? Ensure browser is set to accept the JMeter proxy cert: Software caused connection abort: socket write error
+2025-11-19 18:05:40,779 INFO o.a.j.s.FileServer: Set new base='C:\Users\PrakUday\Desktop\JMeterScripts'
+2025-11-19 18:05:46,596 INFO o.a.j.p.h.p.ProxyControl: Valid alias found for :root_ca:
+2025-11-19 18:05:46,596 INFO o.a.j.p.h.p.ProxyControl: Valid alias found for :intermediate_ca:
+2025-11-19 18:05:46,612 INFO o.a.j.p.h.p.Daemon: Creating Daemon Socket on port: 8080
+2025-11-19 18:05:46,784 INFO o.a.j.p.h.p.Daemon: Test Script Recorder up and running!
+2025-11-19 18:05:48,581 INFO o.a.j.p.h.p.ProxyControl: [51741]  Creating entry self.events.data.microsoft.com in D:\Sotfwares\apache-jmeter-5.4.3\apache-jmeter-5.4.3\bin\proxyserver.jks
+2025-11-19 18:06:14,902 INFO o.a.j.p.h.p.ProxyControl: [51747]  Creating entry www.saucedemo.com in D:\Sotfwares\apache-jmeter-5.4.3\apache-jmeter-5.4.3\bin\proxyserver.jks
+2025-11-19 18:06:15,433 INFO o.a.j.p.h.p.Proxy: [51741]  KeyStore for SSL loaded OK and put host 'self.events.data.microsoft.com' in map with key (self.events.data.microsoft.com)
+2025-11-19 18:06:15,480 WARN o.a.j.p.h.p.Proxy: [51741]  Problem with SSL certificate for url  for 'self.events.data.microsoft.com'? Ensure browser is set to accept the JMeter proxy cert: Connection reset
+2025-11-19 18:06:18,245 INFO o.a.j.p.h.p.ProxyControl: Add sample -1 into controller 
+2025-11-19 18:06:38,886 WARN o.a.j.p.h.p.Proxy: [51752]  Problem with SSL certificate for url  for 'self.events.data.microsoft.com'? Ensure browser is set to accept the JMeter proxy cert: Remote host terminated the handshake
+2025-11-19 18:06:42,245 INFO o.a.j.p.h.p.ProxyControl: [51746]  Creating entry google-ohttp-relay-safebrowsing.fastly-edge.com in D:\Sotfwares\apache-jmeter-5.4.3\apache-jmeter-5.4.3\bin\proxyserver.jks
+2025-11-19 18:06:42,761 INFO o.a.j.p.h.p.Proxy: [51747]  KeyStore for SSL loaded OK and put host 'www.saucedemo.com' in map with key (www.saucedemo.com)
+2025-11-19 18:06:42,855 WARN o.a.j.p.h.p.Proxy: [51745]  Problem with SSL certificate for url  for 'www.saucedemo.com'? Ensure browser is set to accept the JMeter proxy cert: Software caused connection abort: socket write error
+2025-11-19 18:06:42,886 WARN o.a.j.p.h.p.Proxy: [51747]  Problem with SSL certificate for url  for 'www.saucedemo.com'? Ensure browser is set to accept the JMeter proxy cert: Software caused connection abort: socket write error
+2025-11-19 18:06:45,824 WARN o.a.j.p.h.p.Proxy: [51753]  Problem with SSL certificate for url  for 'self.events.data.microsoft.com'? Ensure browser is set to accept the JMeter proxy cert: Remote host terminated the handshake
+2025-11-19 18:06:52,527 INFO o.a.j.p.h.p.Daemon: HTTP(S) Test Script Recorder stopped
+2025-11-19 18:07:07,043 INFO o.a.j.p.h.p.ProxyControl: [51744]  Creating entry beacons.gvt2.com in D:\Sotfwares\apache-jmeter-5.4.3\apache-jmeter-5.4.3\bin\proxyserver.jks
+2025-11-19 18:07:07,762 INFO o.a.j.p.h.p.Proxy: [51746]  KeyStore for SSL loaded OK and put host 'google-ohttp-relay-safebrowsing.fastly-edge.com' in map with key (google-ohttp-relay-safebrowsing.fastly-edge.com)
+2025-11-19 18:07:07,793 WARN o.a.j.p.h.p.Proxy: [51746]  Problem with SSL certificate for url  for 'google-ohttp-relay-safebrowsing.fastly-edge.com'? Ensure browser is set to accept the JMeter proxy cert: Software caused connection abort: socket write error
+2025-11-19 18:07:27,465 INFO o.a.j.p.h.p.ProxyControl: [51751]  Creating entry beacons.gcp.gvt2.com in D:\Sotfwares\apache-jmeter-5.4.3\apache-jmeter-5.4.3\bin\proxyserver.jks
+2025-11-19 18:07:27,981 INFO o.a.j.p.h.p.Proxy: [51744]  KeyStore for SSL loaded OK and put host 'beacons.gvt2.com' in map with key (beacons.gvt2.com)
+2025-11-19 18:07:27,997 WARN o.a.j.p.h.p.Proxy: [51742]  Problem with SSL certificate for url  for 'self.events.data.microsoft.com'? Ensure browser is set to accept the JMeter proxy cert: Connection reset
+2025-11-19 18:07:28,028 WARN o.a.j.p.h.p.Proxy: [51744]  Problem with SSL certificate for url  for 'beacons.gvt2.com'? Ensure browser is set to accept the JMeter proxy cert: Software caused connection abort: socket write error
+2025-11-19 18:07:28,028 WARN o.a.j.p.h.p.Proxy: [51743]  Problem with SSL certificate for url  for 'beacons.gvt2.com'? Ensure browser is set to accept the JMeter proxy cert: Software caused connection abort: socket write error
+2025-11-19 18:07:51,641 INFO o.a.j.p.h.p.ProxyControl: [51750]  Creating entry beacons2.gvt2.com in D:\Sotfwares\apache-jmeter-5.4.3\apache-jmeter-5.4.3\bin\proxyserver.jks
+2025-11-19 18:07:52,578 INFO o.a.j.p.h.p.Proxy: [51751]  KeyStore for SSL loaded OK and put host 'beacons.gcp.gvt2.com' in map with key (beacons.gcp.gvt2.com)
+2025-11-19 18:07:52,625 WARN o.a.j.p.h.p.Proxy: [51751]  Problem with SSL certificate for url  for 'beacons.gcp.gvt2.com'? Ensure browser is set to accept the JMeter proxy cert: Software caused connection abort: socket write error
+2025-11-19 18:08:16,859 INFO o.a.j.p.h.p.Proxy: [51750]  KeyStore for SSL loaded OK and put host 'beacons2.gvt2.com' in map with key (beacons2.gvt2.com)
+2025-11-19 18:08:17,355 WARN o.a.j.p.h.p.Proxy: [51750]  Problem with SSL certificate for url  for 'beacons2.gvt2.com'? Ensure browser is set to accept the JMeter proxy cert: Software caused connection abort: socket write error
+2025-11-19 18:10:47,033 INFO o.a.j.g.a.Load: Loading file: C:\Users\PrakUday\Documents\correlation.jmx
+2025-11-19 18:10:47,033 INFO o.a.j.s.FileServer: Set new base='C:\Users\PrakUday\Documents'
+2025-11-19 18:10:47,033 INFO o.a.j.s.SaveService: Loading file: C:\Users\PrakUday\Documents\correlation.jmx
+2025-11-19 18:10:47,267 INFO o.a.j.v.ViewResultsFullVisualizer: Add JavaFX to your Java installation if you want to use renderer: org.apache.jmeter.visualizers.RenderInBrowser
+2025-11-19 18:10:47,423 INFO o.a.j.s.FileServer: Set new base='C:\Users\PrakUday\Documents'
+2025-11-19 18:10:58,642 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2025-11-19 18:10:58,642 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2025-11-19 18:10:58,658 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2025-11-19 18:10:58,939 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Thread Group
+2025-11-19 18:10:58,939 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group Thread Group.
+2025-11-19 18:10:58,954 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2025-11-19 18:10:58,954 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=1 ramp-up=1 delayedStart=false
+2025-11-19 18:10:58,954 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2025-11-19 18:10:58,954 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2025-11-19 18:10:58,954 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-1
+2025-11-19 18:10:59,720 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-1
+2025-11-19 18:10:59,720 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-1
+2025-11-19 18:10:59,720 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2025-11-19 18:10:59,720 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2025-11-19 18:11:13,325 INFO o.a.j.v.ViewResultsFullVisualizer: Add JavaFX to your Java installation if you want to use renderer: org.apache.jmeter.visualizers.RenderInBrowser
+2025-11-19 18:11:16,289 INFO o.a.j.g.a.Load: Loading file: C:\Users\PrakUday\Documents\First UI Test.jmx
+2025-11-19 18:11:16,289 INFO o.a.j.s.FileServer: Set new base='C:\Users\PrakUday\Documents'
+2025-11-19 18:11:16,289 INFO o.a.j.s.SaveService: Loading file: C:\Users\PrakUday\Documents\First UI Test.jmx
+2025-11-19 18:11:16,851 INFO o.a.j.v.ViewResultsFullVisualizer: Add JavaFX to your Java installation if you want to use renderer: org.apache.jmeter.visualizers.RenderInBrowser
+2025-11-19 18:11:17,117 INFO o.a.j.s.FileServer: Set new base='C:\Users\PrakUday\Documents'
+2025-11-19 18:14:15,688 INFO o.a.j.g.a.Load: Loading file: C:\Users\PrakUday\Desktop\JMeterScripts\saucedemo.jmx
+2025-11-19 18:14:15,688 INFO o.a.j.s.FileServer: Set new base='C:\Users\PrakUday\Desktop\JMeterScripts'
+2025-11-19 18:14:15,688 INFO o.a.j.s.SaveService: Loading file: C:\Users\PrakUday\Desktop\JMeterScripts\saucedemo.jmx
+2025-11-19 18:14:15,829 INFO o.a.j.p.h.c.CacheManager: Will only cache the following methods: [GET]
+2025-11-19 18:14:16,172 INFO o.a.j.s.FileServer: Set new base='C:\Users\PrakUday\Desktop\JMeterScripts'
+2025-11-19 18:15:47,699 INFO o.a.j.v.ViewResultsFullVisualizer: Add JavaFX to your Java installation if you want to use renderer: org.apache.jmeter.visualizers.RenderInBrowser
+2025-11-19 18:16:03,023 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2025-11-19 18:16:03,023 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2025-11-19 18:16:03,039 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2025-11-19 18:16:03,336 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Thread Group
+2025-11-19 18:16:03,336 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group Thread Group.
+2025-11-19 18:16:03,336 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2025-11-19 18:16:03,336 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=1 ramp-up=1 delayedStart=false
+2025-11-19 18:16:03,336 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2025-11-19 18:16:03,336 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2025-11-19 18:16:03,367 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-1
+2025-11-19 18:16:03,805 INFO o.a.j.p.h.s.h.LazyLayeredConnectionSocketFactory: Setting up HTTPS TrustAll Socket Factory
+2025-11-19 18:16:03,851 INFO o.a.j.u.JsseSSLManager: Using default SSL protocol: TLS
+2025-11-19 18:16:03,851 INFO o.a.j.u.JsseSSLManager: SSL session context: per-thread
+2025-11-19 18:16:03,898 INFO o.a.j.u.SSLManager: JmeterKeyStore Location:  type JKS
+2025-11-19 18:16:03,898 INFO o.a.j.u.SSLManager: KeyStore created OK
+2025-11-19 18:16:03,898 WARN o.a.j.u.SSLManager: Keystore file not found, loading empty keystore
+2025-11-19 18:16:04,351 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-1
+2025-11-19 18:16:04,367 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-1
+2025-11-19 18:16:04,367 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2025-11-19 18:16:04,367 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
