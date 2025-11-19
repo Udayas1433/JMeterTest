@@ -25,10 +25,10 @@ jobs:
           chmod +x apache-jmeter-5.4.3/bin/jmeter
           export PATH="$PWD/apache-jmeter-5.4.3/bin:$PATH"
 
-      - name: Run JMeter Test (Demo.jmx)
+      - name: Run JMeter Test (saucedemo.jmx)
         run: |
           JMETER_BIN="$PWD/apache-jmeter-5.4.3/bin/jmeter"
-          TEST_PLAN="$PWD/Demo.jmx"
+          TEST_PLAN="$PWD/saucedemo.jmx"
 
           mkdir -p jmeter-output
           echo "Running JMeter..."
